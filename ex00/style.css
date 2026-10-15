@@ -1,0 +1,216 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+      background-color:white;
+      color: black;
+}
+
+body.dark-mode{
+      background-color:#3B3054;
+      color: white;
+}
+
+header{
+       position: relative;
+       display:flex;
+       gap:100px;
+       justify-content: space-between;
+       align-items: center;
+}
+
+header h1{
+         position: relative;
+         left:200px;
+         margin:5px;
+}
+
+
+nav{
+     display: flex;
+     justify-content:center;
+     gap: 20px;
+     align-items: center;
+}
+
+nav a{
+      color: black;
+      text-decoration: underline;
+}
+
+nav a:hover{
+            color:gray;
+            text-decoration: underline;
+}
+
+#changeTheme{
+   cursor: pointer;
+   color: white;
+   background-color: #710193;
+   width: 40px;
+   height: 40px;
+   border:none;
+   border-radius:50%;
+   font-size: 20px;
+   position: relative;
+   right: 200px;
+}
+
+#aboutMe {
+   background-color:#BE93D4;
+   padding: 20px 40px;
+}
+
+#aboutMe.dark-mode {
+   background-color:#8666A0;
+   padding: 20px 40px;
+}
+
+.aboutMe {
+   display:flex;
+   align-items: center;
+   gap: 40px;
+}
+
+#aboutMe img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.myPhoto{
+   display:flex;
+   flex-direction: column;
+   gap:10px;
+}
+
+#aboutMe p{
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+.skillGrid{
+       display:grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 20px;
+                  
+}
+
+.skillGrid div{
+   padding:20px;
+   text-align:center;
+   border-radius: 10px;
+   background-color: #e8e0f5;
+   font-size: 20px;
+   color: #4b3f72;
+}
+
+.skillGrid div.dark-mode{
+      background-color:#625178;
+      color: white;
+}
+.skillGrid span{
+   color:gray;
+}
+
+.skillGrid span.dark-mode {
+    color: #C8BDE0;
+}
+
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-grid article{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e8e0f5;
+}
+
+.project-grid article.dark-mode{
+      background-color:#625178;
+      color: white;
+}
+
+.project-grid h3 {
+    font-size: 20px;
+    color: #4b3f72;
+}
+
+.project-grid h3.dark-mode {
+    font-size: 20px;
+    color: #B784F7;
+}
+
+.project-grid p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.project-grid p.dark-mode {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #C8BDE0;
+}
+
+.contact{
+   display:flex;
+   gap:10px;
+   flex-direction:column;
+   width:400px;
+   position:relative;
+   left:30px;
+   
+}
+
+.contact textarea{
+     height:150px;
+}
+
+.contact button {
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #710193;
+    color: white;
+    cursor: pointer;
+}
+
+.contact button {
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header h1 {
+        left: 0;
+    }
+
+    #changeTheme {
+        right: 0;
+    }
+
+    .skillGrid {
+       display:grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 20px;
+    }
+
+    .contact {
+        width: 100%;
+        left: 0;
+    }
+}
