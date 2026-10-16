@@ -21,8 +21,6 @@ header{
 }
 
 header h1{
-         position: relative;
-         left:200px;
          margin:5px;
 }
 
@@ -39,11 +37,16 @@ nav a{
       text-decoration: underline;
 }
 
+body.dark-mode nav a{
+   color:white;
+}
 nav a:hover{
             color:gray;
-            text-decoration: underline;
+           
 }
-
+body.dark-mode nav a:hover{
+    color:gray;
+}
 #changeTheme{
    cursor: pointer;
    color: white;
@@ -53,8 +56,6 @@ nav a:hover{
    border:none;
    border-radius:50%;
    font-size: 20px;
-   position: relative;
-   right: 200px;
 }
 
 #aboutMe {
@@ -62,7 +63,7 @@ nav a:hover{
    padding: 20px 40px;
 }
 
-#aboutMe.dark-mode {
+body.dark-mode #aboutMe{
    background-color:#8666A0;
    padding: 20px 40px;
 }
@@ -123,7 +124,7 @@ nav a:hover{
    color: #4b3f72;
 }
 
-.skillGrid div.dark-mode{
+body.dark-mode .skillGrid div{
       background-color:#625178;
       color: white;
 }
@@ -131,7 +132,7 @@ nav a:hover{
    color:gray;
 }
 
-.skillGrid span.dark-mode {
+body.dark-mode .skillGrid span{
     color: #C8BDE0;
 }
 
@@ -149,7 +150,7 @@ nav a:hover{
     background-color: #e8e0f5;
 }
 
-.project-grid article.dark-mode{
+body.dark-mode .project-grid article{
       background-color:#625178;
       color: white;
 }
@@ -159,7 +160,7 @@ nav a:hover{
     color: #4b3f72;
 }
 
-.project-grid h3.dark-mode {
+body.dark-mode .project-grid h3{
     font-size: 20px;
     color: #B784F7;
 }
@@ -170,7 +171,7 @@ nav a:hover{
     color: #333;
 }
 
-.project-grid p.dark-mode {
+body.dark-mode .project-grid p{
     font-size: 16px;
     line-height: 1.5;
     color: #C8BDE0;
@@ -181,8 +182,6 @@ nav a:hover{
    gap:10px;
    flex-direction:column;
    width:400px;
-   position:relative;
-   left:30px;
    
 }
 
