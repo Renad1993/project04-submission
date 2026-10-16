@@ -13,17 +13,17 @@ body.dark-mode{
 }
 
 header{
-       position: relative;
+
        display:flex;
        gap:100px;
-       justify-content: space-between;
+       justify-content: center;
        align-items: center;
+       
 }
 
 header h1{
-         margin:5px;
+   margin:5px;
 }
-
 
 nav{
      display: flex;
